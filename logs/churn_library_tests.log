@@ -1,0 +1,78 @@
+__main__ - INFO - Starting tests...
+__main__ - INFO - Testing import_data: SUCCESS
+churn_library - INFO - Saved plot to: images/eda/churn_distribution.png
+churn_library - INFO - Saved plot to: images/eda/customer_age_distribution.png
+churn_library - INFO - Saved plot to: images/eda/marital_status_distribution.png
+churn_library - INFO - Saved plot to: images/eda/total_transactions_count_distribution.png
+churn_library - INFO - Saved plot to: images/eda/heatmap.png
+__main__ - INFO - Testing perform_eda: SUCCESS
+churn_library - INFO - Encoding column: Gender
+churn_library - INFO - Encoding column: Education_Level
+churn_library - INFO - Encoding column: Marital_Status
+churn_library - INFO - Encoding column: Income_Category
+churn_library - INFO - Encoding column: Card_Category
+__main__ - INFO - Testing encoder_helper: SUCCESS
+churn_library - INFO - Encoding column: Gender
+churn_library - INFO - Encoding column: Education_Level
+churn_library - INFO - Encoding column: Marital_Status
+churn_library - INFO - Encoding column: Income_Category
+churn_library - INFO - Encoding column: Card_Category
+__main__ - INFO - Testing perform_feature_engineering: SUCCESS
+churn_library - INFO - Encoding column: Gender
+churn_library - INFO - Encoding column: Education_Level
+churn_library - INFO - Encoding column: Marital_Status
+churn_library - INFO - Encoding column: Income_Category
+churn_library - INFO - Encoding column: Card_Category
+churn_library - INFO - Training models...
+churn_library - INFO - Generating predictions (rf)...
+churn_library - INFO - Generating predictions (lr)...
+churn_library - INFO - random forest results
+churn_library - INFO - test results
+churn_library - INFO -               precision    recall  f1-score   support
+
+           0       0.93      0.99      0.96       249
+           1       0.94      0.63      0.75        51
+
+    accuracy                           0.93       300
+   macro avg       0.93      0.81      0.86       300
+weighted avg       0.93      0.93      0.92       300
+
+churn_library - INFO - train results
+churn_library - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       581
+           1       1.00      1.00      1.00       119
+
+    accuracy                           1.00       700
+   macro avg       1.00      1.00      1.00       700
+weighted avg       1.00      1.00      1.00       700
+
+churn_library - INFO - logistic regression results
+churn_library - INFO - test results
+churn_library - INFO -               precision    recall  f1-score   support
+
+           0       0.91      0.98      0.94       249
+           1       0.82      0.53      0.64        51
+
+    accuracy                           0.90       300
+   macro avg       0.86      0.75      0.79       300
+weighted avg       0.89      0.90      0.89       300
+
+churn_library - INFO - train results
+churn_library - INFO -               precision    recall  f1-score   support
+
+           0       0.92      0.96      0.94       581
+           1       0.76      0.60      0.67       119
+
+    accuracy                           0.90       700
+   macro avg       0.84      0.78      0.81       700
+weighted avg       0.89      0.90      0.89       700
+
+churn_library - INFO - Saved plot to: images/results/rf_results.png
+churn_library - INFO - Saved plot to: images/results/logistic_results.png
+churn_library - INFO - Generating ROC curve comparison plot...
+churn_library - INFO - Saved plot to: images/results/roc_curve_logistic_regression.png
+churn_library - INFO - Saved plot to: images/results/roc_curves_comparison.png
+churn_library - INFO - Saving Models to: models
+__main__ - INFO - Testing train_models: SUCCESS
+__main__ - INFO - All tests completed successfully.
